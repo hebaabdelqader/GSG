@@ -1,0 +1,33 @@
+/* Responsive media queries */
+@media (min-width: 1200px) {
+    .product-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    footer {
+      margin-top: 10%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+    nav {
+      width: 100%;
+      font-size: 16px;
+    }
+    footer {
+      padding: 20px;
+      margin-top: 15%;
+    }
+    #filter-btns .container {
+      width: 95%;
+    }
+  }
+  

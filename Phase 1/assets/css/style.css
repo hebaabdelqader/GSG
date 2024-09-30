@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif; /* تغيير الخط */
+  }
+  
+  /* header section */
+  nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 20%;
+    background-color: #b8b6b6; /* تغيير لون الخلفية */
+    border-left: rgba(0, 0, 0, 0.1) solid 1px;
+    border-right: rgba(0, 0, 0, 0.1) solid 1px;
+    border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+    border-radius: 0 0 8px 8px; /* تعديل الحدود لتصبح أكثر انحناءً */
+  }
+  
+  nav h1 {
+    margin-right: 30%;
+    margin-left: 2%;
+    color: #8e9ea0; /* لون جديد */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  nav h2 {
+    margin: 2%;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    color: #f5f5f5; /* لون جديد للنص */
+  }
+  
+  nav h1:hover {
+    color: #f3a683; /* تأثير hover */
+  }
+  
+  /* filter section */
+  #filter-btns .container {
+    background-color: #e2dcd7;
+    color: #a0a4ad; /* لون النص على الأزرار */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 8px;
+  }
+  
+  #filter-btns button {
+    background-color: #3a3d42;
+    border: none;
+    color: #f5f5f5;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #filter-btns button:hover {
+    background-color: #3a3d42; /* لون جديد عند التمرير */
+    color: #a0a4ad;
+  }
+  
+  #filter-btns button.active {
+    background-color: #3a3d42;
+    color: #a0a4ad;
+  }
+  
+  /* products section */
+  #products {
+    margin-top: 30px;
+    height: 100%;
+  }
+  
+  #products .container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+  }
+  
+  #products .product-card {
+    background-color: #f5f5f5;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #products .product-card:hover {
+    transform: translateY(-5px); /* رفع العنصر عند التمرير */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* تكبير الظل */
+  }
+  
+  #products .product-card img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  #products .product-card h3,
+  #products .product-card h4 {
+    padding-top: 8px;
+    color: #3a3d42;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  #products .product-card p {
+    color: #d5adad;
+    font-weight: 600;
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  
+  /* footer */
+  footer {
+    background-color: #3a3d42;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 5%;
+  }
+  
+  .footer-info a {
+    color: #d2a8e5;
+    text-decoration: none;
+  }
+  
+  .footer-info a:hover {
+    text-decoration: underline;
+  }
+  
+  
